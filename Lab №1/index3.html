@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>Грошова одиниця</title>
+         <link rel="stylesheet" href="css/styles2.css">
+      </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <nav>
+               <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index2.html">Task 1</a></li>
+                  <li><a href="index3.html">Task 2</a></li>
+                  <li><a href="index4.html">Task 3</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div class="content">
+         <input type="number" id="amountInput" placeholder="Ввести суму"><br>
+         <button onclick="displayCurrency()">Вивести грошову одиницю</button>
+         <p id="output"></p>
+      </div>
+      <script>
+         function displayCurrency() {
+               const amount = parseInt(document.getElementById('amountInput').value);
+
+               let value;
+               if (amount === 1) {
+                  value = 'гривня';
+               } else if (amount > 1 && amount < 5) {
+                  value = 'гривні';
+               } else {
+                  value = 'гривень';
+               }
+
+               document.getElementById('output').innerHTML = `${amount} ${value}`;
+            }
+      </script>
+   </body>
+</html>

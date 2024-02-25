@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>Calculator</title>
+         <link rel="stylesheet" href="css/styles.css">
+      </head>
+   <body>
+      <header class="header">
+         <div class="content">
+            <nav>
+               <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index2.html">Task 1</a></li>
+                  <li><a href="index3.html">Task 2</a></li>
+                  <li><a href="index4.html">Task 3</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section>
+         <div class="wrapper">
+            <div class="container">
+               <div class="item input">
+            <form action="" name="form">
+               <input type="text" name="textview" readonly>
+            </form>
+         </div>
+         <div class="item clean" onclick="clean()">C</div>
+         <div class="item back" onclick="back()">&lArr;</div>
+         <div class="item" onclick="calculate('+')">+</div>
+         <div class="item" onclick="calculate('-')">-</div>
+         <div class="item" onclick="calculate('*')">&times;</div>
+         <div class="item" onclick="calculate('/')">&divide;</div>
+         <div class="item" onclick="calculate('7')">7</div>
+         <div class="item" onclick="calculate('8')">8</div>
+         <div class="item" onclick="calculate('9')">9</div>
+         <div class="item" onclick="calculate('(')">(</div>
+         <div class="item" onclick="calculate('4')">4</div>
+         <div class="item" onclick="calculate('5')">5</div>
+         <div class="item" onclick="calculate('6')">6</div>
+         <div class="item" onclick="calculate(')')">)</div>
+         <div class="item" onclick="calculate('1')">1</div>
+         <div class="item" onclick="calculate('2')">2</div>
+         <div class="item" onclick="calculate('3')">3</div>
+         <div class="item equal" onclick="equal()">=</div>
+         <div class="item zero" onclick="calculate('0')">0</div>
+         <div class="item" onclick="calculate('.')">.</div>
+         </div>
+         </div>
+         </section>
+      <script src="JS/script.js"></script>
+   </body>
+</html>

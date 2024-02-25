@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>Зайві пробіли</title>
+         <link rel="stylesheet" href="css/styles3.css">
+      </head>
+   <body>
+      <header class="header">
+         <div class="container">
+            <nav>
+               <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index2.html">Task 1</a></li>
+                  <li><a href="index3.html">Task 2</a></li>
+                  <li><a href="index4.html">Task 3</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section>
+         <div class="container">
+            <textarea id="textInput" rows="10" cols="50"></textarea>
+            <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
+            <div id="output"></div>
+         </div>
+      </section>
+      <script>
+         function removeExtraSpaces() {
+            const inputText = document.getElementById('textInput').value;
+            const outputText = inputText.replace(/\s+/g, ' ').replace(/\s+([\.,;:])/g, '$1');
+            document.getElementById('output').innerText = outputText;
+         }
+      </script>
+   </body>
+</html>
